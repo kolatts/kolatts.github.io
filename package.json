@@ -14,7 +14,10 @@
   "type": "commonjs",
   "dependencies": {
     "@fontsource-variable/outfit": "^5.2.8",
+    "@iconify-json/simple-icons": "^1.2.82",
     "astro": "^6.3.3",
-    "geist": "^1.7.0"
+    "astro-icon": "^1.1.5",
+    "geist": "^1.7.0",
+    "simple-icons": "^16.19.0"
   }
 }

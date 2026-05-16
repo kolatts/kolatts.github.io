@@ -1,5 +1,6 @@
 ---
 import '@fontsource-variable/outfit';
+import { Icon } from 'astro-icon/components';
 ---
 
 <!doctype html>
@@ -35,12 +36,12 @@ import '@fontsource-variable/outfit';
     <section class="section stack-section" aria-labelledby="stack-heading">
       <p class="eyebrow" id="stack-heading">Stack</p>
       <ul class="chip-list" role="list">
-        <li class="chip">.NET / C#</li>
-        <li class="chip">Blazor WASM</li>
-        <li class="chip">TypeScript</li>
-        <li class="chip">AWS Bedrock</li>
-        <li class="chip">GitHub Actions</li>
-        <li class="chip">Azure</li>
+        <li class="chip"><Icon name="simple-icons:dotnet" class="chip-icon" />.NET / C#</li>
+        <li class="chip"><Icon name="simple-icons:blazor" class="chip-icon" />Blazor WASM</li>
+        <li class="chip"><Icon name="simple-icons:typescript" class="chip-icon" />TypeScript</li>
+        <li class="chip"><Icon name="simple-icons:amazon" class="chip-icon" />AWS Bedrock</li>
+        <li class="chip"><Icon name="simple-icons:githubactions" class="chip-icon" />GitHub Actions</li>
+        <li class="chip"><Icon name="simple-icons:microsoftazure" class="chip-icon" />Azure</li>
         <li class="chip">MCP / Agents</li>
       </ul>
     </section>
@@ -80,14 +81,59 @@ import '@fontsource-variable/outfit';
       </div>
     </section>
 
+    <!-- ───── EXPERIENCE ───── -->
+    <section class="section exp-section" aria-labelledby="exp-heading">
+      <p class="eyebrow" id="exp-heading">Experience</p>
+      <ol class="exp-list">
+
+        <li class="exp-role">
+          <div class="exp-header">
+            <span class="exp-company">Verifiable</span>
+            <span class="exp-meta">Staff Engineer · Developer Experience Guild Lead · 2025 – Present</span>
+          </div>
+          <ul class="exp-bullets">
+            <li>Built an AI-powered code review pipeline on AWS Bedrock — cut PR review time by 30+ minutes per pull request and standardized CI/CD practices org-wide via a reusable GitHub Actions workflow library.</li>
+            <li>Prototyped Source Warden: an autonomous ops pipeline that ingests Datadog alerts and opens remediation PRs without human triage — proving end-to-end AI ownership of an ops workflow.</li>
+            <li>Architected an AI-native local dev platform in .NET and Blazor WASM with automatic data seeding, integrated E2E tests, and self-healing infrastructure so AI coding tools operate against a fully realistic environment.</li>
+          </ul>
+        </li>
+
+        <li class="exp-role">
+          <div class="exp-header">
+            <span class="exp-company">Arcoro</span>
+            <span class="exp-meta">Principal Software Engineer · 2021 – 2025</span>
+          </div>
+          <ul class="exp-bullets">
+            <li>Pioneered Arcoro Hub — now the company's central product platform — a technical vision to scale 10x in .NET, Blazor Hybrid WASM, and .NET MAUI with a live sync bridge to legacy applications.</li>
+            <li>Tripled feature delivery speed across all product teams by building a new SPA and API for ExakTime in Angular and .NET while preserving a seamless experience for existing users.</li>
+            <li>Rewrote a bug-ridden event-driven architecture on Azure Event Hubs, Functions, and Storage — 98% performance improvement and stopped customer data loss.</li>
+          </ul>
+        </li>
+
+        <li class="exp-role">
+          <div class="exp-header">
+            <span class="exp-company">PNC Bank</span>
+            <span class="exp-meta">Principal Software Engineer · 2016 – 2021</span>
+          </div>
+          <ul class="exp-bullets">
+            <li>Led rewrites of two legacy institutional asset management systems into .NET — 86%+ performance improvement on workloads handling millions of dollars per hour, passing internal audit.</li>
+            <li>Increased QA deployment frequency from once per month to 4+ per day by building CI/CD pipelines with Azure DevOps and IBM UrbanCode Deploy.</li>
+            <li>Mentored a developer focused on code quality and simplicity — who now leads a team of 7 on the same applications.</li>
+          </ul>
+        </li>
+
+      </ol>
+    </section>
+
     <!-- ───── LINKS ───── -->
     <section class="section links-section" aria-labelledby="links-heading">
       <p class="eyebrow" id="links-heading">Find me</p>
       <nav class="pill-row" aria-label="External links">
-        <a class="pill" href="https://github.com/kolatts" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a class="pill" href="https://linkedin.com/in/sunnykolattukudy" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a class="pill" href="https://github.com/kolatts" target="_blank" rel="noopener noreferrer"><Icon name="simple-icons:github" class="pill-icon" />GitHub</a>
+        <a class="pill" href="https://linkedin.com/in/sunnykolattukudy" target="_blank" rel="noopener noreferrer"><Icon name="simple-icons:linkedin" class="pill-icon" />LinkedIn</a>
         <a class="pill" href="https://imagile.dev" target="_blank" rel="noopener noreferrer">Imagile</a>
         <a class="pill" href="https://app.imagile.dev" target="_blank" rel="noopener noreferrer">Projects</a>
+        <a class="pill pill--outline" href="/SunnyKolattukudyResume.pdf" download>Resume ↓</a>
       </nav>
     </section>
 
@@ -109,7 +155,7 @@ import '@fontsource-variable/outfit';
         <div class="triptych-narrative">
           <p>Medicine, then heavy metal, then software. That's the actual sequence.</p>
           <p>The instinct to help people drove the first chapter. Case Western Reserve University, Cleveland Clinic Lerner College of Medicine — medicine is one of the better places to act on that impulse. It just didn't leave much room for creativity, and both are wired in.</p>
-          <p>Co-founded Deadiron, a melodic thrash metal band, recorded an album — that was the creative chapter. Then a nonprofit, an IT role, a coding bootcamp, and a decade of building. Software turned out to hold both: help people at scale and build things that didn't exist before.</p>
+          <p>Co-founded <a href="https://www.youtube.com/@DEADIRONvideos" class="narrative-link" target="_blank" rel="noopener noreferrer">Deadiron</a>, a melodic thrash metal band, recorded an album — that was the creative chapter. Then a nonprofit, an IT role, a coding bootcamp, and a decade of building. Software turned out to hold both: help people at scale and build things that didn't exist before.</p>
           <p>The clinical training and the band both shaped how the engineering happens now. A locked-in team playing like a single organism outperforms a technically excellent one that doesn't. Listen first, understand the system, fix the root cause.</p>
         </div>
       </div>
@@ -150,13 +196,14 @@ import '@fontsource-variable/outfit';
 
   html {
     scroll-behavior: smooth;
+    background: url('/images/hero-bg.png') center / cover fixed;
   }
 
   body {
     font-family: 'Outfit Variable', 'Outfit', system-ui, sans-serif;
     font-size: var(--text-base);
     color: var(--ink);
-    background: #fff;
+    background: transparent;
     -webkit-font-smoothing: antialiased;
   }
 
@@ -175,7 +222,7 @@ import '@fontsource-variable/outfit';
     display: flex;
     align-items: center;
     padding: clamp(3rem, 8vw, 6rem) clamp(1.5rem, 6vw, 6rem) clamp(2rem, 5vw, 4rem);
-    background: #fff;
+    background: transparent;
     position: relative;
     overflow: hidden;
   }
@@ -253,7 +300,7 @@ import '@fontsource-variable/outfit';
 
   /* ── Stack ── */
   .stack-section {
-    background: #fff;
+    background: rgba(255, 255, 255, 0.78);
   }
 
   .chip-list {
@@ -272,11 +319,115 @@ import '@fontsource-variable/outfit';
     font-size: 0.85rem;
     font-family: inherit;
     white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .chip-icon {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+    color: var(--teal-400);
+  }
+
+  /* ── Experience ── */
+  .exp-section {
+    background: rgba(255, 255, 255, 0.78);
+  }
+
+  .exp-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .exp-role {
+    display: grid;
+    gap: 0.75rem;
+    padding: 1.25rem;
+    margin: -1.25rem;
+    border-radius: 12px;
+    border: 1.5px solid transparent;
+    transition:
+      background 0.2s ease,
+      border-color 0.2s ease;
+    cursor: default;
+  }
+
+  .exp-role:hover {
+    background: rgba(29, 158, 117, 0.04);
+    border-color: var(--teal-200);
+  }
+
+  @media (min-width: 640px) {
+    .exp-role {
+      grid-template-columns: 260px 1fr;
+      gap: 0 2.5rem;
+    }
+  }
+
+  .exp-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding-top: 0.1rem;
+  }
+
+  .exp-company {
+    font-size: var(--text-base);
+    font-weight: 600;
+    color: var(--ink);
+    transition: color 0.2s ease;
+  }
+
+  .exp-role:hover .exp-company {
+    color: var(--teal-600);
+  }
+
+  .exp-meta {
+    font-size: var(--text-xs);
+    color: var(--muted);
+    line-height: 1.5;
+  }
+
+  .exp-bullets {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .exp-bullets li {
+    font-size: var(--text-sm);
+    color: var(--ink);
+    line-height: 1.65;
+    padding-left: 1rem;
+    position: relative;
+    transition: color 0.2s ease;
+  }
+
+  .exp-role:hover .exp-bullets li {
+    color: #1a1a1a;
+  }
+
+  .exp-bullets li::before {
+    content: '–';
+    position: absolute;
+    left: 0;
+    color: var(--teal-400);
+    transition: color 0.2s ease, transform 0.2s ease;
+  }
+
+  .exp-role:hover .exp-bullets li::before {
+    color: var(--teal-600);
+    transform: translateX(2px);
   }
 
   /* ── Now ── */
   .now-section {
-    background: var(--surface);
+    background: rgba(247, 247, 245, 0.82);
   }
 
   .now-grid {
@@ -292,7 +443,7 @@ import '@fontsource-variable/outfit';
   }
 
   .now-card {
-    background: #fff;
+    background: rgba(255, 255, 255, 0.85);
     border-radius: 12px;
     border: 0.5px solid #E5E7EB;
     padding: 1.25rem;
@@ -355,7 +506,7 @@ import '@fontsource-variable/outfit';
 
   /* ── Links ── */
   .links-section {
-    background: #fff;
+    background: rgba(247, 247, 245, 0.82);
   }
 
   .pill-row {
@@ -365,7 +516,9 @@ import '@fontsource-variable/outfit';
   }
 
   .pill {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
     background: var(--teal-400);
     color: #fff;
     border-radius: 999px;
@@ -384,6 +537,24 @@ import '@fontsource-variable/outfit';
 
   .pill:focus-visible {
     box-shadow: 0 0 0 3px var(--teal-50);
+  }
+
+  .pill--outline {
+    background: transparent;
+    color: var(--teal-600);
+    border: 1.5px solid var(--teal-400);
+  }
+
+  .pill--outline:hover,
+  .pill--outline:focus-visible {
+    background: var(--teal-50);
+  }
+
+  .pill-icon {
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+    color: rgba(255, 255, 255, 0.85);
   }
 
   /* ── Triptych ── */
@@ -428,6 +599,18 @@ import '@fontsource-variable/outfit';
     font-size: var(--text-base);
     color: rgba(255, 255, 255, 0.72);
     line-height: 1.75;
+  }
+
+  .narrative-link {
+    color: var(--teal-200);
+    text-decoration: underline;
+    text-decoration-color: rgba(93, 202, 165, 0.4);
+    text-underline-offset: 3px;
+    transition: color 0.15s ease;
+  }
+
+  .narrative-link:hover {
+    color: #fff;
   }
 
   .triptych-narrative p:first-child {
