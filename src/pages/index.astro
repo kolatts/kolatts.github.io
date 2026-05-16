@@ -1,0 +1,451 @@
+---
+import '@fontsource-variable/outfit';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sunny Kolattukudy — Platform builder and developer experience engineer." />
+    <title>Sunny Kolattukudy</title>
+  </head>
+
+  <body>
+
+    <!-- ───── HERO ───── -->
+    <header class="hero">
+      <div class="hero-inner">
+        <div class="hero-accent">
+          <div class="accent-bar"></div>
+          <p class="eyebrow">Platform Builder · Developer Experience · Columbus, OH</p>
+        </div>
+        <h1 class="hero-name">
+          <span class="name-line">Sunny</span>
+          <span class="name-line">Kolattukudy</span>
+        </h1>
+        <p class="tagline">
+          I build agentic engineering systems — code review pipelines, plugin marketplaces,
+          and the scaffolding that makes teams move faster without losing control.
+        </p>
+      </div>
+    </header>
+
+    <!-- ───── STACK ───── -->
+    <section class="section stack-section" aria-labelledby="stack-heading">
+      <p class="eyebrow" id="stack-heading">Stack</p>
+      <ul class="chip-list" role="list">
+        <li class="chip">.NET / C#</li>
+        <li class="chip">Blazor WASM</li>
+        <li class="chip">TypeScript</li>
+        <li class="chip">AWS Bedrock</li>
+        <li class="chip">GitHub Actions</li>
+        <li class="chip">Azure</li>
+        <li class="chip">MCP / Agents</li>
+      </ul>
+    </section>
+
+    <!-- ───── NOW ───── -->
+    <section class="section now-section" aria-labelledby="now-heading">
+      <p class="eyebrow" id="now-heading">Now</p>
+      <div class="now-grid" role="list">
+        <div class="now-card now-card--wide" role="listitem">
+          <span class="now-label">Building</span>
+          <ul class="project-list">
+            <li>
+              <a href="https://kolatts.github.io/pncli" class="project-link" target="_blank" rel="noopener noreferrer">
+                PNCLI
+              </a>
+            </li>
+            <li>
+              <a href="https://verifiable.com/" class="project-link" target="_blank" rel="noopener noreferrer">
+                AI Native Agentic Workflows
+              </a>
+            </li>
+            <li>
+              <a href="https://app.imagile.dev" class="project-link" target="_blank" rel="noopener noreferrer">
+                Imagile B2B Platform
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="now-card" role="listitem">
+          <span class="now-label">Reading</span>
+          <span class="now-value">The Simple Path to Wealth · The Startup Owner's Manual · Romans</span>
+        </div>
+        <div class="now-card" role="listitem">
+          <span class="now-label">Listening</span>
+          <span class="now-value">High Fade · Angine de Poitrine · Carpenter Brut</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───── LINKS ───── -->
+    <section class="section links-section" aria-labelledby="links-heading">
+      <p class="eyebrow" id="links-heading">Find me</p>
+      <nav class="pill-row" aria-label="External links">
+        <a class="pill" href="https://github.com/kolatts" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a class="pill" href="https://linkedin.com/in/sunnykolattukudy" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a class="pill" href="https://imagile.dev" target="_blank" rel="noopener noreferrer">Imagile</a>
+        <a class="pill" href="https://app.imagile.dev" target="_blank" rel="noopener noreferrer">Projects</a>
+      </nav>
+    </section>
+
+    <!-- ───── TRIPTYCH ───── -->
+    <section class="triptych-section" aria-label="Background">
+      <div class="triptych-wrap">
+        <img
+          src="/images/pictures.png"
+          alt="Three portraits: Sunny as a physician in a white coat, as a metal vocalist on stage, and as a software engineer in front of code"
+          class="triptych-img"
+          loading="eager"
+          decoding="async"
+        />
+        <div class="triptych-labels" aria-hidden="true">
+          <span>Medicine</span>
+          <span>Heavy Metal</span>
+          <span>Software</span>
+        </div>
+        <div class="triptych-narrative">
+          <p>Medicine, then heavy metal, then software. That's the actual sequence.</p>
+          <p>The instinct to help people drove the first chapter. Case Western Reserve University, Cleveland Clinic Lerner College of Medicine — medicine is one of the better places to act on that impulse. It just didn't leave much room for creativity, and both are wired in.</p>
+          <p>Co-founded Deadiron, a melodic thrash metal band, recorded an album — that was the creative chapter. Then a nonprofit, an IT role, a coding bootcamp, and a decade of building. Software turned out to hold both: help people at scale and build things that didn't exist before.</p>
+          <p>The clinical training and the band both shaped how the engineering happens now. A locked-in team playing like a single organism outperforms a technically excellent one that doesn't. Listen first, understand the system, fix the root cause.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Sunny Kolattukudy</p>
+    </footer>
+
+  </body>
+</html>
+
+<style>
+  /* ── Variables ── */
+  :root {
+    --teal-50:  #E1F5EE;
+    --teal-200: #5DCAA5;
+    --teal-400: #1D9E75;
+    --teal-600: #0F6E56;
+    --teal-900: #04342C;
+    --ink:      #0D0D0D;
+    --surface:  #F7F7F5;
+    --muted:    #6B7280;
+
+    --text-xs:   0.75rem;
+    --text-sm:   0.875rem;
+    --text-base: 1rem;
+    --text-lg:   1.25rem;
+    --text-hero: clamp(3rem, 10vw, 9rem);
+  }
+
+  /* ── Reset & base ── */
+  *, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Outfit Variable', 'Outfit', system-ui, sans-serif;
+    font-size: var(--text-base);
+    color: var(--ink);
+    background: #fff;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── Eyebrow ── */
+  .eyebrow {
+    font-size: 0.7rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 400;
+  }
+
+  /* ── Hero ── */
+  .hero {
+    min-height: 75svh;
+    display: flex;
+    align-items: center;
+    padding: clamp(3rem, 8vw, 6rem) clamp(1.5rem, 6vw, 6rem) clamp(2rem, 5vw, 4rem);
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-inner {
+    max-width: 900px;
+    width: 100%;
+  }
+
+  .hero-accent {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .accent-bar {
+    width: 48px;
+    height: 4px;
+    background: var(--teal-400);
+    border-radius: 2px;
+  }
+
+  /* Scroll-driven parallax — CSS only, no JS */
+  @supports (animation-timeline: scroll()) {
+    .hero-accent {
+      animation: parallax-up linear both;
+      animation-timeline: scroll();
+      animation-range: 0 40vh;
+    }
+    @keyframes parallax-up {
+      to {
+        transform: translateY(-60px);
+        opacity: 0.4;
+      }
+    }
+  }
+
+  .hero-name {
+    display: flex;
+    flex-direction: column;
+    font-size: var(--text-hero);
+    font-weight: 500;
+    line-height: 0.95;
+    letter-spacing: -0.03em;
+    color: var(--ink);
+    margin-bottom: 2rem;
+  }
+
+  @media (min-width: 640px) {
+    :root {
+      --text-hero: clamp(4rem, 12vw, 9rem);
+    }
+  }
+
+  .name-line {
+    display: block;
+  }
+
+  .tagline {
+    font-size: var(--text-lg);
+    color: var(--muted);
+    line-height: 1.6;
+    max-width: 520px;
+  }
+
+  /* ── Sections shared ── */
+  .section {
+    padding: clamp(2rem, 4vw, 3.5rem) clamp(1.5rem, 6vw, 6rem);
+  }
+
+  .section > .eyebrow {
+    margin-bottom: 1.5rem;
+  }
+
+  /* ── Stack ── */
+  .stack-section {
+    background: #fff;
+  }
+
+  .chip-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+  }
+
+  .chip {
+    border: 1px solid var(--teal-200);
+    color: var(--teal-600);
+    background: transparent;
+    border-radius: 999px;
+    padding: 6px 16px;
+    font-size: 0.85rem;
+    font-family: inherit;
+    white-space: nowrap;
+  }
+
+  /* ── Now ── */
+  .now-section {
+    background: var(--surface);
+  }
+
+  .now-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  @media (min-width: 640px) {
+    .now-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .now-card {
+    background: #fff;
+    border-radius: 12px;
+    border: 0.5px solid #E5E7EB;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .now-card--wide {
+    grid-column: 1 / -1;
+  }
+
+  .now-label {
+    font-size: var(--text-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+  }
+
+  .now-value {
+    font-size: var(--text-base);
+    color: var(--ink);
+    line-height: 1.4;
+  }
+
+  .project-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.25rem;
+  }
+
+  @media (min-width: 640px) {
+    .project-list {
+      flex-direction: row;
+      gap: 1.5rem;
+    }
+  }
+
+  .project-link {
+    color: var(--teal-400);
+    text-decoration: none;
+    font-size: var(--text-base);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    transition: color 0.15s ease;
+  }
+
+  .project-link::after {
+    content: '↗';
+    font-size: 0.75em;
+    opacity: 0.7;
+  }
+
+  .project-link:hover {
+    color: var(--teal-600);
+  }
+
+  /* ── Links ── */
+  .links-section {
+    background: #fff;
+  }
+
+  .pill-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .pill {
+    display: inline-block;
+    background: var(--teal-400);
+    color: #fff;
+    border-radius: 999px;
+    padding: 8px 20px;
+    font-size: 0.85rem;
+    font-family: inherit;
+    text-decoration: none;
+    transition: background 0.15s ease;
+  }
+
+  .pill:hover,
+  .pill:focus-visible {
+    background: var(--teal-600);
+    outline: none;
+  }
+
+  .pill:focus-visible {
+    box-shadow: 0 0 0 3px var(--teal-50);
+  }
+
+  /* ── Triptych ── */
+  .triptych-section {
+    background: var(--teal-900);
+    padding: clamp(2.5rem, 5vw, 4.5rem) clamp(1.5rem, 6vw, 6rem);
+  }
+
+  .triptych-wrap {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .triptych-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+
+  .triptych-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    font-size: var(--text-xs);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--teal-200);
+    opacity: 0.7;
+  }
+
+  .triptych-narrative {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 680px;
+  }
+
+  .triptych-narrative p {
+    font-size: var(--text-base);
+    color: rgba(255, 255, 255, 0.72);
+    line-height: 1.75;
+  }
+
+  .triptych-narrative p:first-child {
+    color: rgba(255, 255, 255, 0.92);
+    font-size: var(--text-lg);
+    font-weight: 400;
+  }
+
+  /* ── Footer ── */
+  .site-footer {
+    padding: 2rem clamp(1.5rem, 6vw, 6rem);
+    background: var(--teal-900);
+    border-top: 0.5px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .site-footer p {
+    font-size: var(--text-xs);
+    color: rgba(255, 255, 255, 0.3);
+    letter-spacing: 0.04em;
+  }
+</style>
