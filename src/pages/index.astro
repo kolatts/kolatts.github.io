@@ -33,8 +33,7 @@ import { Icon } from 'astro-icon/components';
     </header>
 
     <!-- ───── STACK ───── -->
-    <section class="section stack-section" aria-labelledby="stack-heading">
-      <p class="eyebrow" id="stack-heading">Stack</p>
+    <section class="stack-section" aria-label="Tech stack">
       <ul class="chip-list" role="list">
         <li class="chip"><Icon name="simple-icons:dotnet" class="chip-icon" />.NET / C#</li>
         <li class="chip"><Icon name="simple-icons:blazor" class="chip-icon" />Blazor WASM</li>
@@ -42,7 +41,8 @@ import { Icon } from 'astro-icon/components';
         <li class="chip"><Icon name="simple-icons:amazon" class="chip-icon" />AWS Bedrock</li>
         <li class="chip"><Icon name="simple-icons:githubactions" class="chip-icon" />GitHub Actions</li>
         <li class="chip"><Icon name="simple-icons:microsoftazure" class="chip-icon" />Azure</li>
-        <li class="chip">MCP / Agents</li>
+        <li class="chip"><Icon name="simple-icons:anthropic" class="chip-icon" />Anthropic / Claude</li>
+        <li class="chip"><Icon name="simple-icons:openai" class="chip-icon" />OpenAI / Codex</li>
       </ul>
     </section>
 
@@ -300,7 +300,8 @@ import { Icon } from 'astro-icon/components';
 
   /* ── Stack ── */
   .stack-section {
-    background: rgba(255, 255, 255, 0.78);
+    background: transparent;
+    padding: 0 clamp(1.5rem, 6vw, 6rem) clamp(1.5rem, 3vw, 2.5rem);
   }
 
   .chip-list {
