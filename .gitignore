@@ -1,6 +1,7 @@
 dist/
 node_modules/
 .astro/
-.claude/
+.claude/*
+!.claude/skills/
 .playwright-cli/
 /*.png
