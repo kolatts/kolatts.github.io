@@ -47,6 +47,8 @@ import { Icon } from 'astro-icon/components';
           <a class="action action--primary" href="/SunnyKolattukudyResume.pdf" download>Resume</a>
           <a class="action" href="https://github.com/kolatts" target="_blank" rel="noopener noreferrer"><Icon name="simple-icons:github" class="action-icon" />GitHub</a>
           <a class="action" href="https://linkedin.com/in/sunnyjk" target="_blank" rel="noopener noreferrer"><Icon name="simple-icons:linkedin" class="action-icon" />LinkedIn</a>
+          <a class="action" href="https://www.instagram.com/sunnykolattukudy/" target="_blank" rel="noopener noreferrer"><Icon name="simple-icons:instagram" class="action-icon" />Instagram</a>
+          <a class="action" href="https://www.tiktok.com/@imagileconsulting" target="_blank" rel="noopener noreferrer"><Icon name="simple-icons:tiktok" class="action-icon" />TikTok</a>
           <a class="action" href="https://imagile.dev" target="_blank" rel="noopener noreferrer">Imagile</a>
           <a class="action" href="https://app.imagile.dev" target="_blank" rel="noopener noreferrer">Projects</a>
         </nav>
@@ -84,10 +86,16 @@ import { Icon } from 'astro-icon/components';
                 PNCLI
               </a>
             </li>
-            <li>
-              <a href="https://github.com/kolatts/context-overflow" class="project-link" target="_blank" rel="noopener noreferrer">
+            <li class="project-item">
+              <a href="https://context-overflow.dev" class="project-link" target="_blank" rel="noopener noreferrer">
                 Context Overflow
               </a>
+              <span class="project-meta">
+                <a href="https://kolatts.github.io/context-overflow" class="project-alt" target="_blank" rel="noopener noreferrer">
+                  GitHub Pages mirror
+                </a>
+                <span class="project-code">Referral code: <code>GITHUB-PROFILE</code></span>
+              </span>
             </li>
             <li>
               <a href="https://verifiable.com/" class="project-link" target="_blank" rel="noopener noreferrer">
@@ -432,6 +440,7 @@ import { Icon } from 'astro-icon/components';
 
   .action:focus-visible,
   .project-link:focus-visible,
+  .project-alt:focus-visible,
   .narrative-link:focus-visible {
     box-shadow: 0 0 0 3px rgba(46, 211, 183, 0.34);
   }
@@ -634,6 +643,45 @@ import { Icon } from 'astro-icon/components';
     content: '↗';
     color: var(--ember);
     font-size: var(--text-sm);
+  }
+
+  .project-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .project-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    font-size: var(--text-sm);
+    line-height: 1.35;
+  }
+
+  .project-alt {
+    width: fit-content;
+    color: rgba(255, 250, 240, 0.72);
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: rgba(46, 211, 183, 0.5);
+    text-underline-offset: 3px;
+  }
+
+  .project-alt:hover,
+  .project-alt:focus-visible {
+    color: var(--teal);
+  }
+
+  .project-code {
+    color: rgba(255, 250, 240, 0.58);
+  }
+
+  .project-code code {
+    color: var(--gold);
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-weight: 800;
+    letter-spacing: 0.02em;
   }
 
   .exp-section {
