@@ -5,9 +5,9 @@ NAME = "Sunny Kolattukudy"
 CONTACT = "kolatts@gmail.com · (216) 543-4471 · Lewis Center, Ohio · kolatts.github.io"
 
 SUMMARY = (
-    "Product-focused platform builder with 10+ years delivering high-impact software across fintech, HR tech, and healthcare. "
-    "Specializes in modernizing legacy systems, raising engineering culture, and pushing organizations to the AI frontier — "
-    "from proof-of-concept to production. Equally at home shaping technical vision and shipping code."
+    "Hands-on engineering leader with 10+ years across fintech, HR tech, and healthcare, driving AI-native engineering "
+    "transformation through developer experience, internal platforms, shared standards, and mentoring. "
+    "Leads change across teams by setting technical direction and still architecting and shipping the systems."
 )
 
 JOBS = [
