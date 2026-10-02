@@ -18,7 +18,7 @@ ANCHORS = [
     ("Sunny Kolattukudy", 42.6),
     ("kolatts@gmail.com", 69.3),
     ("SUMMARY", 96.8),
-    ("Product-focused platform builder", 114.3),
+    ("Hands-on engineering leader", 114.3),
     ("EMPLOYMENT", 162.8),
     ("Verifiable", 182.3),
     ("Staff Software Engineer", 196.3),
