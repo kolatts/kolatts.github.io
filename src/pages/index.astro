@@ -53,7 +53,7 @@ import { Icon } from 'astro-icon/components';
           <a class="action" href="https://app.imagile.dev" target="_blank" rel="noopener noreferrer">Projects</a>
         </nav>
       </div>
-      <div class="hero-panel" data-parallax="-0.12" aria-hidden="true">
+      <div class="hero-panel" data-parallax="-0.04" aria-hidden="true">
         <span class="panel-label">Current Focus</span>
         <span class="panel-title">AI-Native Engineering</span>
         <span class="panel-copy">Making AI-assisted development safe at team scale, and teaching engineers to get real leverage from Anthropic and OpenAI tools.</span>
@@ -79,20 +79,20 @@ import { Icon } from 'astro-icon/components';
       <p class="eyebrow" id="impact-heading">Impact</p>
       <ul class="metric-grid" role="list">
         <li class="metric">
-          <span class="metric-value">30+ min</span>
-          <span class="metric-label">saved per pull request with AI code review</span>
+          <span class="metric-value">AI code review</span>
+          <span class="metric-label">Time saved on every pull request, at team scale</span>
         </li>
         <li class="metric">
-          <span class="metric-value">3×</span>
-          <span class="metric-label">feature delivery speed across all product teams</span>
+          <span class="metric-value">E2E automation</span>
+          <span class="metric-label">End-to-end test suites that catch regressions before customers do</span>
         </li>
         <li class="metric">
-          <span class="metric-value">98%</span>
-          <span class="metric-label">performance gain from an event-driven rewrite</span>
+          <span class="metric-value">Fully automated deployments</span>
+          <span class="metric-label">CI/CD pipelines that ship to every environment without manual steps</span>
         </li>
         <li class="metric">
-          <span class="metric-value">1/mo → 4+/day</span>
-          <span class="metric-label">QA deployments after rebuilding CI/CD</span>
+          <span class="metric-value">Scalable architecture</span>
+          <span class="metric-label">Event-driven, cloud-native platforms built to grow with the business</span>
         </li>
       </ul>
     </section>
@@ -1024,10 +1024,14 @@ import { Icon } from 'astro-icon/components';
       padding-inline: 3rem;
     }
 
+    /* In flow below the actions so it never covers the hero links. */
     .hero-panel {
       display: block;
-      right: 3rem;
-      bottom: 2.5rem;
+      position: relative;
+      right: auto;
+      bottom: auto;
+      justify-self: end;
+      margin-top: 2rem;
     }
 
     .section,
@@ -1050,6 +1054,19 @@ import { Icon } from 'astro-icon/components';
 
     .triptych-narrative {
       max-width: 920px;
+    }
+  }
+
+  /* Wide enough for the name and the panel to sit side by side. */
+  @media (min-width: 1440px) {
+    .hero {
+      grid-template-columns: minmax(0, 1fr) 19rem;
+      column-gap: 3rem;
+    }
+
+    .hero-panel {
+      width: 100%;
+      margin-top: 0;
     }
   }
 
