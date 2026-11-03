@@ -49,8 +49,9 @@ import { Icon } from 'astro-icon/components';
           <a class="action" href="https://linkedin.com/in/sunnyjk" target="_blank" rel="noopener noreferrer"><Icon name="simple-icons:linkedin" class="action-icon" />LinkedIn</a>
           <a class="action" href="https://www.instagram.com/sunnykolattukudy/" target="_blank" rel="noopener noreferrer"><Icon name="simple-icons:instagram" class="action-icon" />Instagram</a>
           <a class="action" href="https://www.tiktok.com/@imagileconsulting" target="_blank" rel="noopener noreferrer"><Icon name="simple-icons:tiktok" class="action-icon" />TikTok</a>
-          <a class="action" href="https://imagile.dev" target="_blank" rel="noopener noreferrer">Imagile</a>
-          <a class="action" href="https://app.imagile.dev" target="_blank" rel="noopener noreferrer">Projects</a>
+          <a class="action" href="https://x.com/kolatts" target="_blank" rel="noopener noreferrer"><Icon name="simple-icons:x" class="action-icon" />X</a>
+          <a class="action" href="https://www.youtube.com/@ImagileConsulting" target="_blank" rel="noopener noreferrer"><Icon name="simple-icons:youtube" class="action-icon" />YouTube</a>
+          <a class="action" href="https://imagile.dev" target="_blank" rel="noopener noreferrer"><span class="action-icon action-icon--imagile" aria-hidden="true"></span>Imagile</a>
         </nav>
       </div>
       <div class="hero-panel" data-parallax="-0.04" aria-hidden="true">
@@ -98,16 +99,6 @@ import { Icon } from 'astro-icon/components';
               </span>
             </li>
             <li>
-              <a href="https://verifiable.com/" class="project-link" target="_blank" rel="noopener noreferrer">
-                AI Native Agentic Workflows
-              </a>
-            </li>
-            <li>
-              <a href="https://app.imagile.dev" class="project-link" target="_blank" rel="noopener noreferrer">
-                Imagile B2B Platform
-              </a>
-            </li>
-            <li>
               <a href="https://kolatts.github.io/luna-story-time" class="project-link" target="_blank" rel="noopener noreferrer">
                 Luna's Story Time
               </a>
@@ -116,7 +107,7 @@ import { Icon } from 'astro-icon/components';
         </div>
         <div class="now-card" role="listitem">
           <span class="now-label">Reading</span>
-          <span class="now-value">Steve Jobs · Genesis · Galatians · Startup Owner's Manual</span>
+          <span class="now-value">Steve Jobs · Exodus · Galatians · Startup Owner's Manual</span>
         </div>
         <div class="now-card" role="listitem">
           <span class="now-label">Listening</span>
@@ -158,7 +149,7 @@ import { Icon } from 'astro-icon/components';
         </li>
         <li class="pillar">
           <span class="pillar-title">Developer experience</span>
-          <span class="pillar-copy">Lead the Developer Experience Guild at Verifiable: find the friction, fix it once, and make the paved road the easy road.</span>
+          <span class="pillar-copy">Find the friction, fix it once, and make the paved road the easy road.</span>
         </li>
         <li class="pillar">
           <span class="pillar-title">Platforms &amp; standards</span>
@@ -178,14 +169,23 @@ import { Icon } from 'astro-icon/components';
 
         <li class="exp-role">
           <div class="exp-header">
-            <span class="exp-company">Verifiable</span>
-            <span class="exp-meta">Staff Software Engineer · Developer Experience Guild Leader · 2025 – Present</span>
+            <span class="exp-company">Imagile</span>
+            <span class="exp-meta">Founder &amp; Principal Consultant · 2026 – Present</span>
           </div>
           <ul class="exp-bullets">
-            <li>Lead the Developer Experience Guild, driving the move to AI-native engineering — teaching teams to work effectively with Claude Code and Codex, and building the guardrails that make it safe.</li>
-            <li>Cut PR review time by 30+ minutes per pull request with an AI code review pipeline on Claude with automatic Codex fallback — a reusable GitHub Actions workflow that keeps review and CI/CD standards running org-wide.</li>
-            <li>Shipped Source Warden to production: AI ops that triages Datadog alerts and hands the owning engineers the fix, the investigation, and screenshot proof — replacing manual on-call triage.</li>
-            <li>Architected the Engineering Internal Developer Portal in .NET and Blazor WASM — agent skills, self-healing workflows, and E2E test history give engineers and coding agents one realistic, shared environment.</li>
+            <li>Helping engineering teams go AI-native with Claude Code and Codex — platforms, standards, and hands-on coaching.</li>
+            <li>Building Toil, a JSON CLI and MCP server that gives coding agents scoped access to GitHub, Azure DevOps, and Jira.</li>
+          </ul>
+        </li>
+
+        <li class="exp-role">
+          <div class="exp-header">
+            <span class="exp-company">Verifiable</span>
+            <span class="exp-meta">Staff Software Engineer · Developer Experience Guild Leader · 2025 – 2026</span>
+          </div>
+          <ul class="exp-bullets">
+            <li>Led the Developer Experience Guild through the shift to AI-native engineering: coached teams on Claude Code and Codex, and set the guardrails that made it safe.</li>
+            <li>Built an AI-assisted code review workflow on GitHub Actions, cutting review time by 30+ minutes per pull request.</li>
           </ul>
         </li>
 
@@ -499,6 +499,19 @@ import { Icon } from 'astro-icon/components';
     width: 1rem;
     height: 1rem;
     flex: 0 0 auto;
+  }
+
+  .action-icon--imagile {
+    background: currentColor;
+    -webkit-mask: url('/images/imagile-brain.png') center / contain no-repeat;
+    mask: url('/images/imagile-brain.png') center / contain no-repeat;
+  }
+
+  @media (forced-colors: active) {
+    .action-icon--imagile {
+      forced-color-adjust: none;
+      background: CanvasText;
+    }
   }
 
   .hero-panel {
