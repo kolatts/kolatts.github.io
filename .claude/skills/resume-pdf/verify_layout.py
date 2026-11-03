@@ -20,8 +20,8 @@ ANCHORS = [
     ("SUMMARY", 96.8),
     ("Hands-on engineering leader", 114.3),
     ("EMPLOYMENT", 162.8),
-    ("Verifiable", 182.3),
-    ("Staff Software Engineer", 196.3),
+    ("Imagile", 182.3),
+    ("Founder", 196.3),
 ]
 RULES = [88.5, 110.0, 176.0]
 BOTTOM_LIMIT = 739.2      # 792 - 52.8 bottom margin

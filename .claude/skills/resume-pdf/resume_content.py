@@ -12,20 +12,23 @@ SUMMARY = (
 
 JOBS = [
     (
-        "Verifiable",
-        "Staff Software Engineer · Developer Experience Guild Leader · August 2025 – Present",
+        "Imagile",
+        "Founder & Principal Consultant · November 2026 – Present",
         [
-            "Reduced PR review cycle time by 30+ minutes per pull request by building an AI-powered code review pipeline "
-            "targeting the Claude platform with automatic fallback to Codex — a reusable GitHub Actions workflow that keeps "
-            "reviews and CI/CD standards running org-wide through provider service disruptions.",
+            "Helping engineering teams go AI-native with Claude Code and Codex — platforms, standards, and hands-on coaching.",
 
-            "Shipped Source Warden to production, an AI operations pipeline that proactively triages Datadog alerts and "
-            "surfaces the fix and the investigation behind it — with proof in the form of embedded screenshots — directly to "
-            "the engineers who own it, replacing manual on-call triage.",
+            "Building Toil, a JSON CLI and MCP server that gives coding agents scoped access to GitHub, Azure DevOps, and Jira.",
+        ],
+    ),
+    (
+        "Verifiable",
+        "Staff Software Engineer · Developer Experience Guild Leader · August 2025 – October 2026",
+        [
+            "Led the Developer Experience Guild through the shift to AI-native engineering, coaching teams on Claude Code "
+            "and Codex and setting the guardrails that made AI-assisted development safe at team scale.",
 
-            "Architected the Engineering Internal Developer Portal in .NET and Blazor WASM — AI-native, with agent skills, "
-            "self-healing workflows, and E2E test history — so engineers and coding agents operate against a fully realistic "
-            "environment with a shared source of truth.",
+            "Reduced PR review cycle time by 30+ minutes per pull request with an AI-assisted code review workflow in "
+            "GitHub Actions, standardizing review and CI/CD practice across the org.",
         ],
     ),
     (
