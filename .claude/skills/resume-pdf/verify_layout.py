@@ -13,7 +13,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.abspath(os.path.join(HERE, "..", "..", ".."))
 PDF = sys.argv[1] if len(sys.argv) > 1 else os.path.join(REPO_ROOT, "public", "SunnyKolattukudyResume.pdf")
 
-# (text prefix, expected span top in points) — fixed anchors of the original design.
+# (text prefix, expected span top in points). Positions are fixed by the original design;
+# the last two prefixes are the first job's company and meta line, so update them when the top job changes.
 ANCHORS = [
     ("Sunny Kolattukudy", 42.6),
     ("kolatts@gmail.com", 69.3),

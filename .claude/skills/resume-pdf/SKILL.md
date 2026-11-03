@@ -24,6 +24,10 @@ python .claude/skills/resume-pdf/verify_layout.py       # asserts the layout anc
 the page count, anchors, rules, fonts, or bottom margin drift. Requires `reportlab`
 (build) and `pymupdf` (verify).
 
+`ANCHORS` in `verify_layout.py` names the first job's company and the first word of its
+meta line (currently `Imagile` / `Founder`). When a job is added above it or jobs are
+reordered, update those two prefixes; the y-positions stay the same.
+
 The resume must stay **one page**. If the build reports OVERFLOW, tighten wording — do not
 shrink the type or margins.
 
@@ -31,7 +35,9 @@ shrink the type or margins.
 
 `src/pages/index.astro` carries a shorter version of the same Experience bullets. A change
 to a job's story belongs in both: the PDF bullet keeps the metric and the mechanism, the
-site bullet is the condensed read. Titles and date ranges must match exactly.
+site bullet is the condensed read (short bullets with no metric may be identical in both).
+Titles must match exactly. Date ranges must agree: the PDF gives month and year
+("August 2025 – October 2026"), the site gives years only ("2025 – 2026").
 
 ## Layout spec
 

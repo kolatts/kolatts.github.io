@@ -185,7 +185,7 @@ import { Icon } from 'astro-icon/components';
           </div>
           <ul class="exp-bullets">
             <li>Led the Developer Experience Guild through the shift to AI-native engineering: coached teams on Claude Code and Codex, and set the guardrails that made it safe.</li>
-            <li>Built AI-assisted code review and CI/CD workflows on GitHub Actions, cutting review time by 30+ minutes per pull request.</li>
+            <li>Built an AI-assisted code review workflow on GitHub Actions, cutting review time by 30+ minutes per pull request.</li>
           </ul>
         </li>
 
@@ -505,6 +505,13 @@ import { Icon } from 'astro-icon/components';
     background: currentColor;
     -webkit-mask: url('/images/imagile-brain.png') center / contain no-repeat;
     mask: url('/images/imagile-brain.png') center / contain no-repeat;
+  }
+
+  @media (forced-colors: active) {
+    .action-icon--imagile {
+      forced-color-adjust: none;
+      background: CanvasText;
+    }
   }
 
   .hero-panel {
